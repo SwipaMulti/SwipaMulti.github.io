@@ -6,145 +6,6 @@
     <title>Fofana Mamady | Portfolio BTS SIO SISR</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .veille-intro {
-            background: #0f2540;
-            border-left: 4px solid #38bdf8;
-            border-radius: 8px;
-            padding: 1.5rem 1.75rem;
-            margin-bottom: 2rem;
-        }
-        .veille-intro p {
-            margin: 0.5rem 0 0;
-            line-height: 1.7;
-            color: #94a3b8;
-        }
-        .veille-intro h3 {
-            margin: 0 0 0.5rem;
-            font-size: 1.1rem;
-            color: #f8fafc;
-        }
-
-        .cloud-explainer {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        @media (max-width: 700px) {
-            .cloud-explainer { grid-template-columns: 1fr; }
-        }
-        .cloud-box {
-            background: #0f172a;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            padding: 1.25rem;
-            transition: 0.3s;
-        }
-        .cloud-box:hover {
-            border-color: #38bdf8;
-        }
-        .cloud-box h4 {
-            margin: 0 0 0.5rem;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: #f8fafc;
-        }
-        .cloud-box p {
-            margin: 0;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            color: #94a3b8;
-        }
-        .cloud-icon {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-        .icon-blue  { background: #1e3a5f; color: #38bdf8; }
-        .icon-amber { background: #3a2e10; color: #fbbf24; }
-
-        .articles-veille {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        .article-card {
-            background: #0f172a;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            padding: 1.25rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            transition: 0.3s;
-        }
-        .article-card:hover {
-            border-color: #38bdf8;
-            transform: translateY(-3px);
-        }
-        .article-card .article-num {
-            font-size: 11px;
-            font-weight: 500;
-            color: #0f172a;
-            background: #38bdf8;
-            border-radius: 4px;
-            padding: 2px 8px;
-            width: fit-content;
-        }
-        .article-card h4 {
-            margin: 0;
-            font-size: 0.95rem;
-            font-weight: 500;
-            line-height: 1.4;
-            color: #f8fafc;
-        }
-        .article-card p {
-            margin: 0;
-            font-size: 0.85rem;
-            color: #94a3b8;
-            line-height: 1.6;
-            flex: 1;
-        }
-        .article-card a.source-link {
-            font-size: 0.78rem;
-            color: #38bdf8;
-            text-decoration: none;
-            word-break: break-all;
-            margin-top: auto;
-        }
-        .article-card a.source-link:hover {
-            text-decoration: underline;
-        }
-        .veille-axes {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 1.5rem;
-        }
-        .axe-badge {
-            background: #1e3a5f;
-            color: #38bdf8;
-            border: 1px solid #334155;
-            border-radius: 20px;
-            padding: 4px 14px;
-            font-size: 0.8rem;
-        }
-        .veille-subtitle {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-            font-weight: 500;
-            color: #f8fafc;
-        }
-    </style>
 </head>
 <body>
 
@@ -154,10 +15,9 @@
             <p class="subtitle">Étudiant BTS SIO Option SISR</p>
             <nav>
                 <ul>
-                    <li><a href="#e5">E5</a></li>
-                    <li><a href="#e6">E6</a></li>
-                    <li><a href="#e7">E7 / Stage</a></li>
-                    <li><a href="#veille">Veille</a></li>
+                    <li><a href="#e5">E5 (Projets)</a></li>
+                    <li><a href="#e6">E6 (Parcours)</a></li>
+                    <li><a href="#veille">Veille Technologique</a></li>
                     <li><a href="#certs">Certifications</a></li>
                 </ul>
             </nav>
@@ -167,216 +27,75 @@
     <main class="container">
 
         <section id="e5">
-            <h2 class="section-title"><i class="fas fa-server"></i> Épreuve E5 : Projets Techniques (OVBS & Ritme)</h2>
+            <h2 class="section-title"><i class="fas fa-server"></i> Épreuve E5 : Projets Techniques</h2>
             <div class="grid">
-                
                 <div class="card">
                     <h3>1. Supervision Zabbix</h3>
-                    <p>Déploiement d'une solution de supervision conteneurisée et configuration des alertes pour l'infrastructure OVBS.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/Zabbix.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <p>Déploiement d'une solution de supervision conteneurisée pour l'infrastructure OVBS.</p>
+                    <a href="documents/Zabbix.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
                     <h3>2. Routage Inter-VLAN</h3>
-                    <p>Segmentation du réseau via la création de VLANs et configuration du routage inter-VLAN pour isoler les services.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/Routage%20Inter-Vlan%20.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <p>Segmentation du réseau via la création de VLANs et configuration du routage.</p>
+                    <a href="documents/Routage%20Inter-Vlan%20.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
                     <h3>3. Haute Disponibilité (HSRP)</h3>
-                    <p>Mise en place d'une redondance de passerelle (HSRP) sur équipements Cisco pour garantir la continuité de service.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/HSRP-2.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <p>Mise en place d'une redondance de passerelle sur équipements Cisco.</p>
+                    <a href="documents/HSRP-2.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
-                    <h3>4. Infrastructure Active Directory</h3>
-                    <p>Déploiement d'un contrôleur de domaine (AD DS), DNS et d'un service DHCP pour centraliser les accès réseau.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/Active%20Directory.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <h3>4. Active Directory</h3>
+                    <p>Déploiement d'un contrôleur de domaine, DNS et service DHCP.</p>
+                    <a href="documents/Active%20Directory.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
-                    <h3>5. Migration Cloud (AWS EC2)</h3>
-                    <p>Provisionnement d'une instance EC2 sécurisée sur Amazon Web Services avec filtrage via Security Groups.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/AWS.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <h3>5. Migration Cloud (AWS)</h3>
+                    <p>Provisionnement d'une instance EC2 sécurisée sur AWS.</p>
+                    <a href="documents/AWS.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
-                    <h3>6. Accès Distant Sécurisé (VPN)</h3>
-                    <p>Déploiement d'un VPN SSL nomade via pfSense, avec gestion d'une PKI interne pour le télétravail sécurisé.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/OpenVpn.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <h3>6. Accès Distant (VPN)</h3>
+                    <p>Déploiement d'un VPN SSL nomade via pfSense.</p>
+                    <a href="documents/OpenVpn.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
-                    <h3>7. Gestion de Parc & Helpdesk (GLPI)</h3>
-                    <p>Mise en place d'une solution GLPI sous Linux pour l'inventaire matériel automatisé et la gestion des incidents.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/GLPI.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <h3>7. Gestion de Parc (GLPI)</h3>
+                    <p>Solution GLPI sous Linux pour l'inventaire matériel.</p>
+                    <a href="documents/GLPI.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
                 <div class="card">
-                    <h3>8. Ticketing & Knowledge Base</h3>
-                    <p>Optimisation du support utilisateur chez Ritme Informatique via l'outil SaaS Groove et création d'une base de connaissances.</p>
-                    <div class="button-group" style="margin-top: 20px;">
-                        <a href="documents/Support.pdf" target="_blank" class="btn">Voir le Dossier</a>
-                    </div>
+                    <h3>8. Support & Ticketing</h3>
+                    <p>Optimisation du support utilisateur via l'outil SaaS Groove.</p>
+                    <a href="documents/Support.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
-
             </div>
         </section>
 
         <section id="e6">
-            <h2 class="section-title"><i class="fas fa-eye"></i> Épreuve E6 : Parcours & Veille</h2>
-
-            <div class="card full-width" id="veille">
-
-                <!-- Introduction -->
-                <div class="veille-intro">
-                    <h3><i class="fas fa-cloud" style="color:#2563eb;"></i> &nbsp;Veille Technologique — L'évolution de l'infrastructure Cloud avec AWS EC2</h3>
-                    <p>
-                        Pour ma veille technologique, j'ai choisi de traiter le sujet <strong>« L'évolution de l'infrastructure Cloud avec AWS EC2 »</strong>.
-                        AWS EC2 (Elastic Compute Cloud) est un service qui permet de louer des serveurs virtuels dans le cloud pour exécuter des applications.
-                        C'est l'un des piliers de l'infrastructure cloud moderne, utilisé par des milliers d'entreprises dans le monde.
-                        Dans le cadre de ma formation BTS SIO option SISR, ce sujet m'a semblé particulièrement pertinent car il touche directement
-                        à l'administration et à l'optimisation des infrastructures informatiques. J'ai suivi l'actualité autour de trois grands axes :
-                        l'évolution des processeurs dédiés au cloud, l'intégration de l'intelligence artificielle dans les instances EC2,
-                        et la question de la souveraineté des données en Europe.
-                    </p>
+            <h2 class="section-title"><i class="fas fa-user-tie"></i> Épreuve E6 : Parcours Professionnel</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Fiche de situation n°1</h3>
+                    <p>Description de la première situation professionnelle vécue en entreprise ou en formation.</p>
+                    <a href="documents/Fiche_E6_1.pdf" target="_blank" class="btn">Télécharger la Fiche 1 (PDF)</a>
                 </div>
-
-                <!-- Axes de veille -->
-                <div class="veille-axes">
-                    <span class="axe-badge"><i class="fas fa-microchip"></i> &nbsp;Optimisation des ressources</span>
-                    <span class="axe-badge"><i class="fas fa-robot"></i> &nbsp;Impact de l'IA</span>
-                    <span class="axe-badge"><i class="fas fa-shield-alt"></i> &nbsp;Souveraineté des données</span>
+                <div class="card">
+                    <h3>Fiche de situation n°2</h3>
+                    <p>Description de la seconde situation professionnelle (parcours et évolution des compétences).</p>
+                    <a href="documents/Fiche_E6_2.pdf" target="_blank" class="btn">Télécharger la Fiche 2 (PDF)</a>
                 </div>
-
-                <!-- Présentation Cloud & AWS -->
-                <h3 class="veille-subtitle">Qu'est-ce que le Cloud et AWS ?</h3>
-                <div class="cloud-explainer">
-                    <div class="cloud-box">
-                        <h4>
-                            <span class="cloud-icon icon-blue"><i class="fas fa-cloud"></i></span>
-                            Le Cloud Computing
-                        </h4>
-                        <p>
-                            Le cloud computing consiste à accéder à des ressources informatiques (serveurs, stockage, bases de données, réseau)
-                            via Internet, à la demande et sans avoir à gérer une infrastructure physique. On distingue trois grands modèles :
-                            <strong>IaaS</strong> (infrastructure), <strong>PaaS</strong> (plateforme) et <strong>SaaS</strong> (logiciel).
-                            Le cloud permet aux entreprises de réduire leurs coûts, de gagner en flexibilité et de s'adapter rapidement à la charge.
-                        </p>
-                    </div>
-                    <div class="cloud-box">
-                        <h4>
-                            <span class="cloud-icon icon-amber"><i class="fab fa-aws"></i></span>
-                            Amazon Web Services (AWS)
-                        </h4>
-                        <p>
-                            AWS est le leader mondial du cloud public, lancé par Amazon en 2006. Il propose plus de 200 services couvrant
-                            le calcul, le stockage, les bases de données, l'IA et la sécurité. Son service phare,
-                            <strong>EC2 (Elastic Compute Cloud)</strong>, permet de déployer des serveurs virtuels en quelques minutes,
-                            avec une facturation à l'usage. AWS est présent dans plus de 30 régions géographiques dans le monde,
-                            dont plusieurs en Europe.
-                        </p>
-                    </div>
-                    <div class="cloud-box">
-                        <h4>
-                            <span class="cloud-icon icon-blue"><i class="fas fa-server"></i></span>
-                            EC2 en détail
-                        </h4>
-                        <p>
-                            EC2 permet de choisir parmi des dizaines de types d'instances selon les besoins : usage général, calcul intensif,
-                            mémoire optimisée, ou encore dédiées à l'IA. Chaque instance peut être configurée avec un système d'exploitation,
-                            des règles de sécurité (Security Groups), du stockage (EBS) et des clés SSH. C'est un outil central pour
-                            tout administrateur d'infrastructure cloud.
-                        </p>
-                    </div>
-                    <div class="cloud-box">
-                        <h4>
-                            <span class="cloud-icon icon-amber"><i class="fas fa-sitemap"></i></span>
-                            Lien avec le BTS SIO SISR
-                        </h4>
-                        <p>
-                            En option SISR, la maîtrise du cloud est essentielle : dimensionner une infrastructure, choisir le bon type
-                            d'instance, sécuriser les accès, optimiser les coûts et comprendre les enjeux réglementaires comme le RGPD
-                            sont des compétences directement liées aux référentiels du BTS. AWS EC2 est aujourd'hui incontournable
-                            dans les entreprises qui recrutent des techniciens systèmes et réseaux.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Articles -->
-                <h3 class="veille-subtitle">Articles de veille</h3>
-                <div class="articles-veille">
-
-                    <div class="article-card">
-                        <span class="article-num">Article 1</span>
-                        <h4>La révolution des puces Graviton4</h4>
-                        <p>AWS déploie ses processeurs ARM Graviton4 sur les instances EC2 R8g : 96 cœurs, 75 % de bande passante mémoire en plus et jusqu'à 40 % de performances supplémentaires sur les bases de données par rapport à la génération Graviton3, pour un coût réduit.</p>
-                        <a href="https://www.informatiquenews.fr/aws-officialise-ses-processeurs-graviton4-et-trainium2-96331" target="_blank" class="source-link">
-                            <i class="fas fa-external-link-alt" style="font-size:10px;"></i> informatiquenews.fr
-                        </a>
-                    </div>
-
-                    <div class="article-card">
-                        <span class="article-num">Article 2</span>
-                        <h4>EC2 et l'IA : les instances Trainium2</h4>
-                        <p>AWS lance ses instances EC2 Trn2 dédiées à l'entraînement de l'IA, offrant 30 à 40 % de meilleur rapport prix/performances que les instances GPU classiques, avec 20,8 pétaflops de puissance de calcul grâce à 16 puces Trainium2.</p>
-                        <a href="https://www.usine-digitale.fr/article/aws-s-appuie-sur-ses-puces-trainium-2-pour-developper-rainier-un-mega-ultracluster-d-ia.N2234440" target="_blank" class="source-link">
-                            <i class="fas fa-external-link-alt" style="font-size:10px;"></i> usine-digitale.fr
-                        </a>
-                    </div>
-
-                    <div class="article-card">
-                        <span class="article-num">Article 3</span>
-                        <h4>Project Rainier : le méga-cluster IA d'AWS et Anthropic</h4>
-                        <p>AWS et Anthropic construisent ensemble Project Rainier, un EC2 UltraCluster composé de centaines de milliers de puces Trainium2 interconnectées, représentant cinq fois plus de capacité de calcul que ce qu'Anthropic utilisait pour entraîner ses modèles.</p>
-                        <a href="https://siliconangle.com/2024/12/03/aws-unveils-next-gen-trainium3-custom-ai-chips-cloud-trainium2-instances/" target="_blank" class="source-link">
-                            <i class="fas fa-external-link-alt" style="font-size:10px;"></i> siliconangle.com
-                        </a>
-                    </div>
-
-                    <div class="article-card">
-                        <span class="article-num">Article 4</span>
-                        <h4>AWS Graviton5 : la puce ARM de nouvelle génération</h4>
-                        <p>Annoncé en décembre 2025, le Graviton5 embarque 192 cœurs par puce et un cache L3 cinq fois plus grand que son prédécesseur, offrant jusqu'à 25 % de performances supplémentaires sur les nouvelles instances EC2 M9g.</p>
-                        <a href="https://www.aboutamazon.com/news/aws/aws-graviton-5-cpu-amazon-ec2" target="_blank" class="source-link">
-                            <i class="fas fa-external-link-alt" style="font-size:10px;"></i> aboutamazon.com
-                        </a>
-                    </div>
-
-                    <div class="article-card">
-                        <span class="article-num">Article 5</span>
-                        <h4>Souveraineté des données : l'AWS European Sovereign Cloud</h4>
-                        <p>AWS lance son Cloud souverain européen, une initiative de 7,8 milliards d'euros permettant de conserver les données sensibles à l'intérieur des frontières de l'UE, exploitée exclusivement par du personnel basé en Europe, pour les secteurs de l'administration, la finance et la santé.</p>
-                        <a href="https://www.lemagit.fr/actualites/366637410/AWS-EU-Sovereign-Cloud-letendard-de-la-souverainete-technique-est-disponible" target="_blank" class="source-link">
-                            <i class="fas fa-external-link-alt" style="font-size:10px;"></i> lemagit.fr
-                        </a>
-                    </div>
-
-                </div>
-
             </div>
         </section>
 
-        <section id="e7">
-            <h2 class="section-title"><i class="fas fa-briefcase"></i> Épreuve E7 : Cybersécurité & Stage</h2>
+        <section id="veille">
+            <h2 class="section-title"><i class="fas fa-search"></i> Veille Technologique</h2>
             <div class="card full-width">
-                <h3>Expériences en milieu professionnel</h3>
-                <p>Présentation des missions réalisées durant mes périodes de stage et projets liés à la cybersécurité des services informatiques.</p>
-                <a href="#" class="btn outline">En cours de rédaction...</a>
+                <h3>L'évolution de l'infrastructure Cloud avec AWS EC2</h3>
+                <p>Analyse des nouvelles architectures de processeurs (Graviton), de l'intégration de l'IA dans le cloud et des problématiques de souveraineté des données.</p>
+                <div style="margin-top: 20px;">
+                    <a href="documents/Veille_Technologique_Fofana.pdf" target="_blank" class="btn outline">Consulter le dossier de veille complet</a>
+                </div>
             </div>
         </section>
 
@@ -387,13 +106,7 @@
                     <i class="fab fa-cisco fa-2x"></i>
                     <h3>Networking Basics</h3>
                     <p>Cisco Networking Academy</p>
-                    <a href="documents/certif-cisco.pdf" target="_blank" class="btn-small">Voir le diplôme</a>
-                </div>
-                <div class="card cert">
-                    <i class="fas fa-microchip fa-2x"></i>
-                    <h3>IoT & Digital Transformation</h3>
-                    <p>Cisco Networking Academy</p>
-                    <a href="documents/certif-iot.pdf" target="_blank" class="btn-small">Voir le diplôme</a>
+                    <a href="documents/certif-cisco.pdf" target="_blank" class="btn-small">Voir</a>
                 </div>
             </div>
         </section>
