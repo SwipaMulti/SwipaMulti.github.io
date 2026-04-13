@@ -1,44 +1,38 @@
-<section id="e6">
-            <h2 class="section-title"><i class="fas fa-eye"></i> Épreuve E6 : Parcours & Veille Technologique</h2>
-            
-            <div class="card full-width" style="background-color: #ffffff !important;">
-                
-                <div class="veille-intro" style="background-color: #f1f5f9 !important; border-left: 5px solid #2563eb !important; padding: 20px !important;">
-                    <h3 style="color: #2563eb !important; font-weight: bold !important; margin-bottom: 10px !important;">
-                        <i class="fas fa-cloud"></i> Veille Technologique — L'évolution de l'infrastructure Cloud avec AWS EC2
-                    </h3>
-                    <p style="color: #000000 !important; font-size: 1rem !important; line-height: 1.6 !important; display: block !important; visibility: visible !important;">
-                        Pour ma veille technologique, j'ai choisi de traiter le sujet <strong>« L'évolution de l'infrastructure Cloud avec AWS EC2 »</strong>.
-                        AWS EC2 est un pilier de l'infrastructure cloud moderne. Dans le cadre de ma formation SISR, ce sujet est crucial pour 
-                        l'administration et l'optimisation des SI. J'ai suivi l'actualité autour de trois axes : les nouveaux processeurs, 
-                        l'IA dans les instances et la souveraineté des données en Europe.
-                    </p>
-                </div>
+<style>
+    /* Correction visuelle pour le mode sombre */
+    .veille-intro {
+        background-color: #ffffff !important; /* On garde le fond blanc */
+        border-left: 5px solid #2563eb !important;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 2rem;
+    }
 
-                <div class="cloud-explainer">
-                    <div class="cloud-box" style="border: 1px solid #ccc !important;">
-                        <h4 style="color: #1d4ed8 !important;"><i class="fas fa-cloud"></i> Le Cloud Computing</h4>
-                        <p style="color: #333 !important;">Accès à des ressources informatiques via Internet (IaaS, PaaS, SaaS) pour gagner en flexibilité.</p>
-                    </div>
-                    <div class="cloud-box" style="border: 1px solid #ccc !important;">
-                        <h4 style="color: #b45309 !important;"><i class="fab fa-aws"></i> Amazon Web Services</h4>
-                        <p style="color: #333 !important;">Leader mondial proposant plus de 200 services, dont EC2 pour le calcul élastique.</p>
-                    </div>
-                </div>
+    /* ICI : On force le texte en noir ou gris très foncé pour qu'il soit lisible sur le blanc */
+    .veille-intro h3 {
+        color: #2563eb !important; /* Le titre en bleu */
+        margin-top: 0;
+    }
 
-                <div class="articles-veille">
-                    <div class="article-card" style="border: 1px solid #eee !important;">
-                        <span class="article-num">Article 1</span>
-                        <h4 style="color: #000 !important; font-weight: bold !important;">Puces Graviton4</h4>
-                        <p style="color: #444 !important;">Performances accrues de 40% pour un coût réduit via l'architecture ARM.</p>
-                        <a href="https://www.informatiquenews.fr/aws-officialise-ses-processeurs-graviton4-et-trainium2-96331" target="_blank" style="color: #2563eb !important; font-weight: bold !important;">Lire la source</a>
-                    </div>
-                    <div class="article-card" style="border: 1px solid #eee !important;">
-                        <span class="article-num">Article 2</span>
-                        <h4 style="color: #000 !important; font-weight: bold !important;">Instances Trainium2</h4>
-                        <p style="color: #444 !important;">Optimisation du rapport prix/performance pour l'entraînement de l'IA.</p>
-                        <a href="https://www.usine-digitale.fr/article/aws-s-appuie-sur-ses-puces-trainium-2-pour-developper-rainier-un-mega-ultracluster-d-ia.N2234440" target="_blank" style="color: #2563eb !important; font-weight: bold !important;">Lire la source</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    .veille-intro p, .veille-intro strong {
+        color: #1a202c !important; /* Le texte en noir très foncé */
+        line-height: 1.7;
+    }
+
+    /* On s'assure que les icônes cloud restent bleues */
+    .veille-intro i {
+        color: #2563eb !important;
+    }
+
+    /* Le reste de la section E6 */
+    .cloud-box {
+        background: #1e293b; /* Fond sombre pour les boites du dessous pour matcher ton thème */
+        border: 1px solid #334155;
+        border-radius: 12px;
+        padding: 1.25rem;
+    }
+    
+    .cloud-box p, .cloud-box h4 {
+        color: #ffffff !important; /* Texte blanc pour les boites sombres */
+    }
+</style>
