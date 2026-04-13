@@ -1,38 +1,140 @@
 <style>
-    /* Correction visuelle pour le mode sombre */
+    /* 1. SECTION VEILLE - INTRODUCTION (Boîte Blanche) */
     .veille-intro {
-        background-color: #ffffff !important; /* On garde le fond blanc */
+        background-color: #ffffff !important; /* Fond blanc forcé */
         border-left: 5px solid #2563eb !important;
         border-radius: 8px;
         padding: 20px;
         margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    /* ICI : On force le texte en noir ou gris très foncé pour qu'il soit lisible sur le blanc */
+    /* Texte forcé en noir pour la boîte blanche */
     .veille-intro h3 {
-        color: #2563eb !important; /* Le titre en bleu */
-        margin-top: 0;
+        color: #2563eb !important; /* Titre en bleu */
+        margin-top: 0 !important;
+        font-weight: bold !important;
     }
 
-    .veille-intro p, .veille-intro strong {
-        color: #1a202c !important; /* Le texte en noir très foncé */
-        line-height: 1.7;
+    .veille-intro p, 
+    .veille-intro strong, 
+    .veille-intro span {
+        color: #1a202c !important; /* Texte noir profond */
+        line-height: 1.7 !important;
+        font-size: 1rem !important;
     }
 
-    /* On s'assure que les icônes cloud restent bleues */
+    /* Icône cloud dans l'intro */
     .veille-intro i {
         color: #2563eb !important;
     }
 
-    /* Le reste de la section E6 */
+    /* 2. AXES DE VEILLE (Badges) */
+    .veille-axes {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .axe-badge {
+        background: #2563eb !important;
+        color: #ffffff !important;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    /* 3. EXPLICATION CLOUD (Boîtes Sombres pour matcher ton thème) */
+    .cloud-explainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 700px) {
+        .cloud-explainer { grid-template-columns: 1fr; }
+    }
+
     .cloud-box {
-        background: #1e293b; /* Fond sombre pour les boites du dessous pour matcher ton thème */
-        border: 1px solid #334155;
+        background: #1e293b !important; /* Fond sombre */
+        border: 1px solid #334155 !important;
         border-radius: 12px;
         padding: 1.25rem;
     }
-    
-    .cloud-box p, .cloud-box h4 {
-        color: #ffffff !important; /* Texte blanc pour les boites sombres */
+
+    .cloud-box h4 {
+        color: #3b82f6 !important; /* Titre bleu clair */
+        margin-bottom: 10px !important;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
+
+    .cloud-box p {
+        color: #cbd5e1 !important; /* Texte gris clair */
+        font-size: 0.9rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* 4. GRILLE D'ARTICLES (Cartes Sombres) */
+    .articles-veille {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .article-card {
+        background: #1e293b !important;
+        border: 1px solid #334155 !important;
+        border-radius: 12px;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+    }
+
+    .article-card:hover {
+        transform: translateY(-5px);
+        border-color: #2563eb !important;
+    }
+
+    .article-num {
+        background: #2563eb !important;
+        color: white !important;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .article-card h4 {
+        color: #ffffff !important;
+        margin-bottom: 10px !important;
+    }
+
+    .article-card p {
+        color: #94a3b8 !important;
+        font-size: 0.85rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    .source-link {
+        color: #60a5fa !important;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-top: auto;
+    }
+
+    .source-link:hover {
+        text-decoration: underline;
+    }
+
+    .icon-blue  { color: #3b82f6; }
+    .icon-amber { color: #f59e0b; }
 </style>
