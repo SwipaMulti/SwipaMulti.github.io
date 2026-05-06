@@ -139,6 +139,50 @@
             font-weight: 500;
             color: #f8fafc;
         }
+
+        /* ── Document card (Synthèse + CV) ── */
+        .doc-card {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 1.5rem 1.75rem;
+            transition: 0.3s;
+        }
+        .doc-card:hover { border-color: #38bdf8; }
+        .doc-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+            background: #1e3a5f;
+            color: #38bdf8;
+        }
+        .doc-info { flex: 1; min-width: 180px; }
+        .doc-info h3 { margin: 0 0 0.35rem; font-size: 1rem; color: #f8fafc; }
+        .doc-info p  { margin: 0; font-size: 0.87rem; color: #94a3b8; line-height: 1.6; }
+        .btn-dl {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: 600;
+            font-size: 0.85rem;
+            padding: 0.55rem 1.1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: 0.2s;
+        }
+        .btn-dl:hover { background: #7dd3fc; }
     </style>
 </head>
 <body>
@@ -150,6 +194,8 @@
             <nav>
                 <ul>
                     <li><a href="#e5">E5 (Projets)</a></li>
+                    <li><a href="#synthese">Tableau de Synthèse</a></li>
+                    <li><a href="#cv">CV</a></li>
                     <li><a href="#e6">E6 (Parcours)</a></li>
                     <li><a href="#veille">Veille Technologique</a></li>
                     <li><a href="#certs">Certifications</a></li>
@@ -200,10 +246,40 @@
                     <a href="documents/GLPI.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
                 <div class="card">
-                    <h3>8. Support & Ticketing</h3>
+                    <h3>8. Support &amp; Ticketing</h3>
                     <p>Optimisation du support utilisateur via l'outil SaaS Groove.</p>
                     <a href="documents/Support.pdf" target="_blank" class="btn">Voir le Dossier</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Tableau de synthèse -->
+        <section id="synthese">
+            <h2 class="section-title"><i class="fas fa-table"></i> Tableau de Synthèse</h2>
+            <div class="doc-card">
+                <div class="doc-icon"><i class="fas fa-table"></i></div>
+                <div class="doc-info">
+                    <h3>Tableau de synthèse E5</h3>
+                    <p>Récapitulatif de l'ensemble des réalisations professionnelles effectuées en cours de formation et en milieu professionnel, avec les compétences mises en œuvre pour chaque projet BTS SIO SISR.</p>
+                </div>
+                <a href="documents/Tableau_Synthese.pdf" target="_blank" class="btn-dl">
+                    <i class="fas fa-download"></i> Télécharger (PDF)
+                </a>
+            </div>
+        </section>
+
+        <!-- CV -->
+        <section id="cv">
+            <h2 class="section-title"><i class="fas fa-id-card"></i> Curriculum Vitæ</h2>
+            <div class="doc-card">
+                <div class="doc-icon"><i class="fas fa-user"></i></div>
+                <div class="doc-info">
+                    <h3>CV — Fofana Mamady</h3>
+                    <p>Chargé de Support Informatique chez Ritme Informatique • BTS SIO option SISR, Insta Paris 2024–2026 • Compétences : systèmes &amp; réseaux, cloud AWS, Active Directory, support logiciel, Microsoft 365 / Entra ID / Intune.</p>
+                </div>
+                <a href="documents/CV.pdf" target="_blank" class="btn-dl">
+                    <i class="fas fa-download"></i> Télécharger (PDF)
+                </a>
             </div>
         </section>
 
